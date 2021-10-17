@@ -5,6 +5,7 @@ require('./db/connection')
 const Image = require('./models/image')
 const Activity = require('./models/activity')
 const cors = require('cors')
+const {insertImages,insertImage} = require("./script")
 app.use(express.json())
 const corsOptions = {
     origin: "http://localhost:4200"
